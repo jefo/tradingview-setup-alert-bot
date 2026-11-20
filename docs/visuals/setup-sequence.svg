@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="SMCshark setup sequence: HTF POI, entry, BOS, CHoCH, confirmed Telegram message">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111b2e"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#3b82f6" stroke-width="1">
+    <path d="M0 120 H1600 M0 260 H1600 M0 400 H1600 M0 540 H1600 M0 680 H1600 M0 820 H1600"/>
+    <path d="M120 0 V1000 M320 0 V1000 M520 0 V1000 M720 0 V1000 M920 0 V1000 M1120 0 V1000 M1320 0 V1000 M1520 0 V1000"/>
+  </g>
+
+  <text x="70" y="74" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#e6f0ff">How a confirmed SMC setup is assembled</text>
+  <text x="70" y="108" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8ea4bf">Higher-timeframe POI → price entry → lower-timeframe BOS → CHoCH → confirmed alert</text>
+
+  <!-- Timeline -->
+  <line x1="118" y1="190" x2="118" y2="760" stroke="#2b3b4e" stroke-width="3"/>
+  <line x1="118" y1="190" x2="118" y2="470" stroke="url(#teal)" stroke-width="3"/>
+
+  <!-- Step 1 -->
+  <circle cx="118" cy="200" r="26" fill="#60a5fa"/>
+  <text x="118" y="207" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#07111d">1</text>
+  <rect x="170" y="160" width="600" height="108" rx="16" fill="#111c2c" stroke="#233449"/>
+  <text x="196" y="196" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#e6f0ff">4H POI created</text>
+  <text x="196" y="224" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9fb3c8">Order Block or Imbalance forms on the higher timeframe</text>
+  <rect x="196" y="238" width="58" height="24" rx="12" fill="#60a5fa"/>
+  <text x="225" y="255" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#07111d">T0</text>
+
+  <!-- Step 2 -->
+  <circle cx="118" cy="360" r="26" fill="#fbbf24"/>
+  <text x="118" y="367" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#07111d">2</text>
+  <rect x="170" y="320" width="600" height="108" rx="16" fill="#111c2c" stroke="#233449"/>
+  <text x="196" y="356" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#e6f0ff">Price enters the POI</text>
+  <text x="196" y="384" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9fb3c8">HTF zone is touched; the bot sends “price entered”</text>
+  <rect x="196" y="398" width="58" height="24" rx="12" fill="#fbbf24"/>
+  <text x="225" y="415" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#07111d">T1</text>
+
+  <!-- Step 3 -->
+  <circle cx="118" cy="520" r="26" fill="#fb7185"/>
+  <text x="118" y="527" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#07111d">3</text>
+  <rect x="170" y="480" width="600" height="108" rx="16" fill="#111c2c" stroke="#233449"/>
+  <text x="196" y="516" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#e6f0ff">LTF internal BOS</text>
+  <text x="196" y="544" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9fb3c8">Structure breaks against the POI direction</text>
+  <rect x="196" y="558" width="58" height="24" rx="12" fill="#fb7185"/>
+  <text x="225" y="575" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#07111d">T2</text>
+
+  <!-- Step 4 -->
+  <circle cx="118" cy="680" r="26" fill="url(#teal)" filter="url(#glow)"/>
+  <text x="118" y="687" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#07111d">4</text>
+  <rect x="170" y="640" width="600" height="108" rx="16" fill="#0f2b2a" stroke="#2dd4bf"/>
+  <text x="196" y="676" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#e6f0ff">LTF internal CHoCH</text>
+  <text x="196" y="704" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9fb3c8">Price shifts back in the POI direction → setup confirmed</text>
+  <rect x="196" y="718" width="58" height="24" rx="12" fill="#2dd4bf"/>
+  <text x="225" y="735" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#07111d">T3</text>
+  <g filter="url(#glow)">
+    <rect x="470" y="714" width="118" height="28" rx="14" fill="#2dd4bf"/>
+    <text x="529" y="733" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#052e2b">CONFIRMED</text>
+  </g>
+
+  <!-- Telegram card -->
+  <rect x="850" y="150" width="680" height="740" rx="26" fill="#17212b" stroke="#2b3b4e" stroke-width="2"/>
+  <rect x="850" y="150" width="680" height="70" rx="26" fill="#1f2b3a"/>
+  <rect x="850" y="194" width="680" height="26" fill="#1f2b3a"/>
+  <circle cx="900" cy="185" r="18" fill="#2dd4bf"/>
+  <text x="900" y="191" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#052e2b">S</text>
+  <text x="932" y="180" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#e6f0ff">SMCshark</text>
+  <text x="932" y="200" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#7f93aa">Telegram · just now</text>
+
+  <g transform="translate(890, 260)" font-family="'Courier New', monospace" font-size="15">
+    <text y="0" font-weight="700" fill="#ffffff">● BTCUSDT SETUP CONFIRMED</text>
+    <text y="26" fill="#d7e3f4">↗ Internal Bullish Reversal in 4H Order Block</text>
+    <text y="68" font-weight="700" fill="#ffffff">SEQUENCE:</text>
+    <text y="96" fill="#2dd4bf">1. ✓</text><text x="52" y="96" fill="#d7e3f4">4H Bullish Order Block @68,000-68,200</text>
+    <text y="120" fill="#d7e3f4">   T0: 14:48 UTC</text>
+    <text y="148" fill="#2dd4bf">2. ✓</text><text x="52" y="148" fill="#d7e3f4">15M price entered POI @68,100</text>
+    <text y="172" fill="#d7e3f4">   T1: 15:18 UTC</text>
+    <text y="200" fill="#2dd4bf">3. ✓</text><text x="52" y="200" fill="#d7e3f4">15M internal Bearish BOS @68,050</text>
+    <text y="224" fill="#d7e3f4">   T2: 15:33 UTC</text>
+    <text y="252" fill="#2dd4bf">4. ✓</text><text x="52" y="252" fill="#d7e3f4">15M internal Bullish CHoCH @68,120</text>
+    <text y="276" fill="#d7e3f4">   T3: 15:49 UTC</text>
+    <text y="320" font-weight="700" fill="#ffffff">RISK:</text>
+    <text y="348" fill="#d7e3f4">• Invalidation: below 68,000</text>
+    <text y="374" fill="#d7e3f4">• Target: 4H bearish imbalance @68,400-68,500</text>
+    <text y="418" fill="#2dd4bf" font-weight="700">QUALITY: HIGH</text>
+    <text y="452" fill="#d7e3f4">#btcusdt #setup #confirmed</text>
+  </g>
+
+  <rect x="890" y="760" width="600" height="92" rx="14" fill="#0f1a28" stroke="#233449"/>
+  <text x="910" y="790" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8ea4bf">The message is built from the stored T0–T3 sequence,</text>
+  <text x="910" y="812" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8ea4bf">not from a single TradingView alert.</text>
+  <text x="910" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8ea4bf">Missing price or symbol is omitted, never invented.</text>
+
+  <text x="70" y="940" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8ea4bf">SMCshark · setup engine · 4H POI confirmed on 15M</text>
+</svg>
